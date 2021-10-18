@@ -10,7 +10,7 @@ First, an AWS IAM OIDC identity provider and an AWS IAM role that GitHub Actions
 module "github_oidc" {
   source = "git::https://github.com/DNXLabs/terraform-aws-vcs-oidc.git"
 
-  identity_provider_url = "https://vstoken.actions.githubusercontent.com"
+  identity_provider_url = "https://token.actions.githubusercontent.com"
   audiences             = [
     "https://github.com/<owner>/<repo>"
   ]
